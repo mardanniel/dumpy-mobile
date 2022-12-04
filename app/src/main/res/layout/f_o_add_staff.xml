@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_index"
+    tools:context=".fragments.owner.AddStaffFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:text="Add Staff"
+            android:textColor="#2b2b2b"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/f_s_as_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Staff Email"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_email_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/f_s_as_email_field"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_fname_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_email_label" />
+
+        <EditText
+            android:id="@+id/f_s_as_fname_field"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_lname_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_fname_label" />
+
+        <TextView
+            android:id="@+id/f_s_as_fname_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Staff First Name"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_fname_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_email_field" />
+
+        <EditText
+            android:id="@+id/f_s_as_lname_field"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_uname_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_lname_label" />
+
+        <TextView
+            android:id="@+id/f_s_as_lname_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Staff Last Name"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_lname_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_fname_field" />
+
+        <EditText
+            android:id="@+id/f_s_as_uname_field"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_contact_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_uname_label" />
+
+        <TextView
+            android:id="@+id/f_s_as_uname_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Staff Username"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_uname_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_lname_field" />
+
+        <EditText
+            android:id="@+id/f_s_as_contact_field"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_age_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_contact_label" />
+
+        <TextView
+            android:id="@+id/f_s_as_contact_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Staff Contact Number"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_contact_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_uname_field" />
+
+        <EditText
+            android:id="@+id/f_s_as_age_field"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_age_label" />
+
+        <TextView
+            android:id="@+id/f_s_as_age_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Staff Age"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_age_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_contact_field" />
+
+        <TextView
+            android:id="@+id/f_s_as_password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Staff Password"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_password_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_age_field" />
+
+        <EditText
+            android:id="@+id/f_s_as_password_field"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_password_label" />
+
+        <TextView
+            android:id="@+id/f_s_as_confirm_password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Confirm Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_password_field" />
+
+        <EditText
+            android:id="@+id/f_s_as_confirm_password_field"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            app:layout_constraintBottom_toTopOf="@+id/f_s_as_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_confirm_password_label" />
+
+        <Button
+            android:id="@+id/f_s_as_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/f_s_as_back"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_confirm_password_field" />
+
+        <Button
+            android:id="@+id/f_s_as_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/f_s_as_add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_s_as_confirm_password_field" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

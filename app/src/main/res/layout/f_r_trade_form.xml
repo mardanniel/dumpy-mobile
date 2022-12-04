@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_index"
+    tools:context=".fragments.recycler.CreateTradeForm">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/trade_form_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:inputType="number|textNoSuggestions"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:textColor="#2B2B2B"
+            android:vmSafeMode="true"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/trade_form_items_list"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Spinner
+            android:id="@+id/trade_form_items_list"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trade_form_item_name_label" />
+
+        <Button
+            android:id="@+id/trade_form_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Add Item"
+            android:textColor="#43A047"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/trade_form_image_file"
+            app:layout_constraintTop_toBottomOf="@+id/trade_form_image_file"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/trade_form_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Cancel"
+            android:textColor="#43A047"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/trade_form_image_file"
+            app:layout_constraintTop_toBottomOf="@+id/trade_form_image_file" />
+
+        <TextView
+            android:id="@+id/trade_form_item_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Select an item"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/trade_form_items_list"
+            app:layout_constraintTop_toBottomOf="@+id/trade_form_header_notice" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Item(s) Quantity"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/trade_form_items_list"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/trade_form_items_list"
+            app:layout_constraintTop_toBottomOf="@+id/trade_form_items_list" />
+
+        <ImageView
+            android:id="@+id/trade_form_image_file"
+            android:layout_width="263dp"
+            android:layout_height="231dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_default_file"
+            app:layout_constraintEnd_toEndOf="@+id/trade_form_file_upload_label"
+            app:layout_constraintStart_toStartOf="@+id/trade_form_file_upload_label"
+            app:layout_constraintTop_toBottomOf="@+id/trade_form_file_upload_label" />
+
+        <TextView
+            android:id="@+id/trade_form_header_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="20dp"
+            android:text="To start, kindly select an item based on the junkshop/recycling center trades list."
+            android:textAlignment="center"
+            android:textColor="#2B2B2B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/trade_form_file_upload_label"
+            android:layout_width="361dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="For us to ensure that your item is genuine, we require you to upload an image showing the item(s)."
+            android:textAlignment="center"
+            android:textColor="#2B2B2B"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/trade_form_quantity_label"
+            app:layout_constraintStart_toStartOf="@+id/trade_form_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/trade_form_quantity" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/trade_image_file_upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_image_search"
+            app:layout_constraintBottom_toBottomOf="@+id/trade_form_image_file"
+            app:layout_constraintEnd_toEndOf="@+id/trade_form_image_file"
+            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintStart_toStartOf="@+id/trade_form_image_file"
+            app:layout_constraintTop_toTopOf="@+id/trade_form_image_file"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/trade_form_quantity_label"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="10dp"
+            android:text="kg"
+            android:textAlignment="center"
+            android:textColor="#2B2B2B"
+            app:layout_constraintBottom_toBottomOf="@+id/trade_form_quantity"
+            app:layout_constraintEnd_toEndOf="@+id/trade_form_items_list"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/trade_form_quantity"
+            app:layout_constraintTop_toTopOf="@+id/trade_form_quantity"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,32 @@
+[
+  {
+    "featureType": "administrative.country",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "visibility": "on"
+      },
+      {
+        "hue": "#ff0000"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "lightness": "0"
+      },
+      {
+        "saturation": "0"
+      },
+      {
+        "gamma": "1.00"
+      },
+      {
+        "visibility": "on"
+      }
+    ]
+  }
+]

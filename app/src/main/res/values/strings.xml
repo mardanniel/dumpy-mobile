@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Dumpy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tt_pickup_tooltip">
+        With this method, a staff will come to your house to assess
+        the items that you set in your trade proposal. Additional charges
+        may apply according to the distance between your location and the
+        establishment that you transact with.
+    </string>
+    <string name="tt_physical_handover_tooltip">
+        With this method, you will have to handover your items to the establishment
+        yourself. No charges will be applied.
+    </string>
+    <string name="f_r_register_checkbox_string">I have read and agreed to the following:</string>
+    <string name="termsandusage"><a href="https://dumpyph.com/page/terms-of-use/">Terms and Conditions</a></string>
+    <string name="privacypolicy"><a href="https://dumpyph.com/page/privacy-policy/">Privacy Policy</a></string>
+</resources>

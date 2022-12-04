@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/owner_nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard"/>
+        <item android:id="@+id/owner_nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile"/>
+        <item android:id="@+id/owner_nav_geofencing"
+            android:icon="@drawable/ic_geofence"
+            android:title="Geofencing"/>
+        <item android:id="@+id/owner_nav_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="Chat"/>
+        <item android:id="@+id/owner_nav_exchange_request"
+            android:icon="@drawable/ic_exchange_request"
+            android:title="Exchange Request"/>
+        <item android:id="@+id/owner_nav_manage_staff"
+            android:icon="@drawable/ic_manage_staff"
+            android:title="Manage Staff"/>
+        <item android:id="@+id/owner_nav_trade_proposal"
+            android:icon="@drawable/ic_trade_proposal"
+            android:title="Trade Proposals"/>
+        <item android:id="@+id/owner_nav_leaderboard"
+            android:icon="@drawable/ic_leaderboard"
+            android:title="Leaderboard"/>
+        <item android:id="@+id/owner_nav_report"
+            android:icon="@drawable/ic_report"
+            android:title="Report"/>
+        <item android:id="@+id/owner_nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout"/>
+    </group>
+
+</menu>

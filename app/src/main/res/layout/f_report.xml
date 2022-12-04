@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75D2CA">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/f_report_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Hello, what report do you want to file?"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/f_report_report_type"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_report_header">
+
+            <RadioButton
+                android:id="@+id/f_report_bug_option"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableTint="@color/white"
+                android:drawableTop="@drawable/ic_bug_report"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Bug Report"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:buttonTint="@color/white" />
+
+            <RadioButton
+                android:id="@+id/f_report_user_option"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/white"
+                android:drawableTop="@drawable/ic_user_report"
+                android:fontFamily="@font/poppins_bold"
+                android:text="User Report"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:buttonTint="@color/white" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/f_report_report_concern"
+            android:layout_width="332dp"
+            android:layout_height="236dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:gravity="start|top"
+            android:hint="Tell us about what you've experienced... (required)"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_report_report_type" />
+
+        <TextView
+            android:id="@+id/f_report_upload_label"
+            android:layout_width="354dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="You can upload any evidence regarding your report (optional)"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_report_report_concern" />
+
+        <Button
+            android:id="@+id/f_report_submit_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="28dp"
+            android:drawableRight="@drawable/ic_send"
+            android:text="Send report"
+            app:backgroundTint="@color/lime_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_report_upload_img_report"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/f_report_upload_img_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_image_search"
+            android:text="Upload Image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_report_img" />
+
+        <ImageView
+            android:id="@+id/f_report_img"
+            android:layout_width="208dp"
+            android:layout_height="208dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_report_upload_label"
+            app:srcCompat="@drawable/ic_default_file" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
