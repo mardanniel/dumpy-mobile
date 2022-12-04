@@ -10,3 +10,6 @@ Dumpy is a web and mobile e-commerce platform for junk trading with GPS and Geof
 - GPS with Geofencing-like service using [Google Maps](https://developers.google.com/maps/documentation/android-sdk/overview) for locating nearby junkshops
 - Realtime Chat using [Firebase](https://firebase.google.com)
 - Notification using [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
+
+## Author
+Mar Danniel Ginturo
